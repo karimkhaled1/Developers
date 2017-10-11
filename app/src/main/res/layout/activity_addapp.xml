@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karim.developers.addapp">
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Package"
+android:hint="package name : com.app"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_marginEnd="16dp" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="URL:www.example.com"
+        android:id="@+id/URl"
+        android:layout_below="@+id/Package"
+        android:layout_alignStart="@+id/Package" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="add"
+        android:onClick="add"
+        android:id="@+id/button4"
+        android:layout_below="@+id/URl"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my apps"
+        android:layout_margin="5dp"
+        android:id="@+id/mashlazm"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button4"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listmyapps"
+        android:listSelector="@android:color/transparent"
+        android:layout_below="@+id/mashlazm"></ListView>
+</RelativeLayout>
